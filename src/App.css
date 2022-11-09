@@ -1,38 +1,105 @@
-.App {
-  text-align: center;
+
+main {
+    padding: 60px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header {
+    display: flex;
+    align-items: center;
+    height: 120px;
+    background: linear-gradient(90deg, black 1.18%, #2F4F04 100%);
+    color: white;
+    padding: 25px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.header--image {
+    height: 100%;
+    margin-right: 15px;
+    margin-left: 10px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header--title {
+    font-size: 1.7rem;
+    margin-right: auto;
+ font-family: "Times New Roman", Times, serif;
+}
+
+.header--sub {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.form {
+    display: grid;
+    grid-template: 50px 50px / 1fr 1fr 2fr;
+    gap: 17px;
+    margin-bottom: 17px;
+}
+
+.form--input {
+    font-family: "Karla", sans-serif;
+    border-radius: 5px;
+    border: 1px solid #2F4F04;
+    text-indent: 5px;
+    font-size:16px;
+}
+
+.form--button {
+    font-family: "Karla", sans-serif;
+    font-size:16px;
+    border-radius: 5px;
+    background: linear-gradient(90.41deg, black 1.14%, #2F4F04 100%);
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.meme {
+    position: relative;
+ border: 5px solid #2F4F04 ;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+
 }
 
-.App-link {
-  color: #61dafb;
+.meme--image {
+
+    max-width: 100%;
+    border-radius: 3px;
+    
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.meme--text {
+    position: absolute;
+    width: 90%;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 20px 0;
+    padding: 0 5px;
+    font-family: impact, sans-serif;
+    font-size: 2.5em;
+    text-transform: uppercase;
+    color: white;
+    letter-spacing: 1px;
+    text-shadow:
+        2px 2px 0 #000,
+        -2px -2px 0 #000,
+        2px -2px 0 #000,
+        -2px 2px 0 #000,
+        0 2px 0 #000,
+        2px 0 0 #000,
+        0 -2px 0 #000,
+        -2px 0 0 #000,
+        2px 2px 5px #000;
+}
+
+.bottom {
+    bottom: 0;
+}
+
+.top {
+    top: 0;
 }
